@@ -39,21 +39,5 @@ ini_setting { 'random ordering':
 # specified in the console for that node.
 
 node default {
-  # This is where you can declare classes for all nodes.
-  # Example:
-  #   class { 'my_class': }
-  notify { "Hello, my name is ${::hostname}": }
-  notify { "This is new!": }
-  #file { '/etc/motd':
-  #  ensure => file,
-  #  owner => 'root',
-  #  group => 'root',
-  #  mode => '0644',
-  #  content => "Think before you type\n",
-  #}
-  exec { "/usr/local/bin/cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
-    creates => '/etc/motd',
-  }
-  include users
-  include skeleton
+
 }
