@@ -40,7 +40,7 @@ ini_setting { 'random ordering':
 
 node default {
   if $::virtual != physical {
-    $vm = capitilize($::virtual)
+    $vm = capitalize($::virtual)
     notify{"This is a ${vm} virtual machine":}
   }
 }
