@@ -39,8 +39,7 @@ ini_setting { 'random ordering':
 # specified in the console for that node.
 
 node default {
-  if $::virtual != physical {
-    $vm = capitalize($::virtual)
-    notify{"This is a ${vm} virtual machine":}
+    $message = hiera('message')
+    notify { $message: }
   }
 }
