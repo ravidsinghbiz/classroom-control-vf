@@ -41,5 +41,4 @@ ini_setting { 'random ordering':
 node default {
     $message = hiera('message')
     notify { $message: }
-  }
 }
