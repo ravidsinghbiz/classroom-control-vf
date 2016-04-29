@@ -1,3 +1,3 @@
 class wrappers::mysql {
-  include::mysql
+  include ::mysql
 }
