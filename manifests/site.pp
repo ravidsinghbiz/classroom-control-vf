@@ -39,7 +39,5 @@ ini_setting { 'random ordering':
 # specified in the console for that node.
 
 node default {
-  class { 'nginx':
-    root => '/var/www/html',
-  }
+  include nginx
 }
