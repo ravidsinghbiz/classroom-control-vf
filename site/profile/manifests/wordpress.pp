@@ -1,4 +1,4 @@
-class profiles::wordpress {
+class profile::wordpress {
 
   include mysql
   include apache
