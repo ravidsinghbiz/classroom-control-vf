@@ -1,3 +1,3 @@
 class wrappers::apache {
-  include::apache
+  include ::apache
 }
