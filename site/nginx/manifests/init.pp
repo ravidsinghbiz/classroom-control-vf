@@ -42,12 +42,10 @@ class nginx {
   }
 
   file { "${docroot}/index.html":
-    ensure => file,
     source => 'puppet:///modules/nginx/index.html',
   }
 
   file { "${confdir}/nginx.conf":
-    ensure => file,
 #    source => 'puppet:///modules/nginx/nginx.conf',
     content => template('nginx/nginx.conf.erb'),
     require => Package[$package],
